@@ -24,6 +24,13 @@ body {
     margin: 0 auto;
 }
 
+/* LIST RESET */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .dark {
     color: #F9FAF8;
 }
