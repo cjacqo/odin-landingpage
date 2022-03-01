@@ -18,6 +18,19 @@ body {
     margin: 0;
 }
 
+/* SECTION HEIGHTS AND MAX WIDTH */
+/* .top-parent {
+    height: 40vh;
+}
+
+.mid-parent {
+    height: 50vh;
+}
+
+.bottom-parent {
+    height: 10vh;
+} */
+
 .max-width {
     width: 90vw;
     max-width: 980px;
@@ -31,6 +44,7 @@ ul {
     list-style: none;
 }
 
+/* BACKGROUND COLOR & FONT COLOR COMBOS */
 .dark {
     color: #F9FAF8;
 }
@@ -43,6 +57,39 @@ ul {
 .grey {
     background-color: #E5E7EB;
     color: #1F2937;
+}
+
+.blue {
+    background-color: #3882F6;
+}
+
+/* FLEX */
+.flex-r {
+    display: flex;
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+/* PARENT PAGE LAYOUT */
+.page-flex {
+    height: 100%;
+    justify-content: space-between;
+}
+
+.page-flex > * {
+    flex: 1 1 auto;
+}
+
+/* TOP, MID & BOTTOM FLEX LAYOUT */
+.mid-parent {
+    height: 80vh;
+}
+
+.mid-parent > * {
+    flex: 1 1 auto;
 }
 
 /* FIRST: Header & Hero */
