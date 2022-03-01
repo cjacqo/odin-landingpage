@@ -104,6 +104,23 @@ ul {
     background-color: #3882F6;
 }
 
+/* BUTTON */
+.btn {
+    cursor: pointer;
+    font-size: 1.075rem;
+    background-color: #3882F6;
+    color: #E5E7EB !important;
+    font-weight: bold;
+    padding: 0.3rem 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn.border {
+    border: 2px solid #E5E7EB;
+    padding: 0.3rem 1rem;
+}
+
 /* FLEX */
 .flex-r {
     display: flex;
@@ -145,9 +162,62 @@ ul {
     align-items: center;
 }
 
+.logo {
+    margin: 0.833rem 0;
+}
+
 /*-- Hero */
+.hero {
+    padding: 3rem 0;
+    gap: 2rem;
+}
+
+.hero-text.flex-c {
+    justify-content: space-between;
+}
+
+.hero.flex-r > *,
+.hero-text.flex-c > * {
+    flex: 1 1 0;
+}
+
 .hero-text > h1 {
+    line-height: 90%;
+    margin: 0;
     font-weight: extra-bold;
+}
+
+.subtext {
+    margin-top: 0.333rem;
+    margin-bottom: 1.22rem;
+    color: #E5E7EB !important;
+}
+
+.hero-text > .btn {
+    width: 25%;
+}
+
+.hero-image {
+    background-color: #566b88;
+}
+
+.hero-image > .img {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-image > .img > small {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 /* SECOND: Some Random Information */
