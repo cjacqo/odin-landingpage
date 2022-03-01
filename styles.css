@@ -11,31 +11,72 @@ html {
     height: 100vh;
     overflow: hidden;
     font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
 }
 
 body {
     height: 100vh;
     margin: 0;
+    font-size: 100%;
 }
-
-/* SECTION HEIGHTS AND MAX WIDTH */
-/* .top-parent {
-    height: 40vh;
-}
-
-.mid-parent {
-    height: 50vh;
-}
-
-.bottom-parent {
-    height: 10vh;
-} */
 
 .max-width {
     width: 90vw;
     max-width: 980px;
     margin: 0 auto;
 }
+
+/* FONT SIZES & FAMILIES */
+.fred {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mont.italic {
+    font-weight: 300;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2.488rem;
+}
+
+h2 {
+    font-size: 2.074rem;
+}
+
+h3 {
+    font-size: 1.728rem;
+}
+
+h4 {
+    font-size: 1.44rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6,
+p {
+    font-size: 1rem;
+}
+
+.sub {
+    font-size: 0.833rem;
+}
+
+.s {
+    font-size: 0.694rem;
+}
+
+.xs {
+    font-size: 0.579rem;
+}
+
 
 /* LIST RESET */
 ul {
@@ -88,18 +129,59 @@ ul {
     height: 80vh;
 }
 
+.top-parent > *,
 .mid-parent > * {
     flex: 1 1 auto;
 }
 
+.bottom-parent {
+    max-height: 10vh;
+}
+
 /* FIRST: Header & Hero */
 /* -- Header */
+.header.flex-r {
+    justify-content: space-between;
+    align-items: center;
+}
 
-.logo {
-    /* margin: 0; */
+/*-- Hero */
+.hero-text > h1 {
+    font-weight: extra-bold;
 }
 
 /* SECOND: Some Random Information */
+/* --- text align */
+.title.container,
+.card-text {
+    text-align: center;
+}
+
+/* --- title */
 .title.container > .section-title {
     font-weight: bold;
+}
+
+/* --- cards */
+.cards-list.flex-r {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card.flex-c {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-image {
+    border: 3px solid #3882F6;
+    border-radius: 0.833rem;
+    height: 100px;
+    width: 125px;
+}
+
+.card-text {
+    width: 70%;
 }
