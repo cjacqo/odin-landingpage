@@ -1,0 +1,51 @@
+/* GLOBAL */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #1f2937;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.max-width {
+    width: 90vw;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.dark {
+    color: #F9FAF8;
+}
+
+.light {
+    background-color: #FFFFFF;
+    color: #1F2937;
+}
+
+.grey {
+    background-color: #E5E7EB;
+    color: #1F2937;
+}
+
+/* FIRST: Header & Hero */
+/* -- Header */
+
+.logo {
+    /* margin: 0; */
+}
+
+/* SECOND: Some Random Information */
+.title.container > .section-title {
+    font-weight: bold;
+}
