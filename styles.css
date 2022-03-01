@@ -8,14 +8,14 @@
 html {
     background-color: #1f2937;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     font-family: sans-serif;
     font-family: 'Fredoka', sans-serif;
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     font-size: 100%;
 }
@@ -109,7 +109,7 @@ ul {
     cursor: pointer;
     font-size: 1.075rem;
     background-color: #3882F6;
-    color: #E5E7EB !important;
+    color: #F9FAF8 !important;
     font-weight: bold;
     padding: 0.3rem 0;
     border: none;
@@ -144,6 +144,7 @@ ul {
 /* TOP, MID & BOTTOM FLEX LAYOUT */
 .mid-parent {
     height: 80vh;
+    overflow-y: scroll;
 }
 
 .top-parent > *,
@@ -249,9 +250,51 @@ ul {
     border: 3px solid #3882F6;
     border-radius: 0.833rem;
     height: 100px;
-    width: 125px;
+    width: 105px;
 }
 
 .card-text {
     width: 70%;
+}
+
+/* THIRD: Insporational Quote */
+.section.third {
+    display: flex;
+    align-items: center;
+}
+
+.quote-text {
+    font-size: 1.22rem;
+}
+
+figcaption {
+    font-weight: bold;
+    width: 30%;
+    margin-left: auto;
+}
+
+/* FOURTH: CTA Card */
+.section.fourth {
+    display: flex;
+    align-items: center;
+    color: #F9FAF8;
+}
+
+.cta-card {
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 3.22rem;
+}
+
+.cta-text > * {
+    margin: 0;
+}
+
+.cta-text > h5 {
+    font-weight: 600;
+    letter-spacing: 0.20rem;
+}
+
+.cta-btn {
+    text-align: center;
 }
